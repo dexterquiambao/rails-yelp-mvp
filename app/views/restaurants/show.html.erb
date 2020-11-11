@@ -8,8 +8,9 @@
 <p>Phone number: <em><%= @restaurant.phone_number %></em> </p>
 <br>
 
-<%= link_to "Back to main list", restaurants_path %>
 <!-- Add 'Add Review' button after defining path -->
+<%= link_to "Add a review", new_restaurant_review_path(@restaurant)%>
+<%= link_to "Back to main list", restaurants_path %>
 
 <br>
 <br>
