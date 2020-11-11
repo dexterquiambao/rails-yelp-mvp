@@ -1,7 +1,25 @@
-<div class="container">
+<h1>Leave your review here!</h1>
+<body class="text-center">
+  <div class="container">
   <%= simple_form_for [@restaurant, @review] do |f| %>
     <%= f.input :content %>
     <%= f.input :rating %>
     <%= f.submit "Submit review"%>
   <% end %>
 </div>
+</body>
+
+
+<style>
+
+h1, h3 {
+  color: black;
+  margin-bottom: 25px;
+}
+
+.container {
+  text-align: left;
+  width: 80%;
+}
+
+</style>

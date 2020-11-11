@@ -1,7 +1,27 @@
-<%= simple_form_for @restaurant do |f| %>
-  <%= f.input :name %>
-  <%= f.input :address %>
-  <%= f.input :phone_number %>
-  <%= f.input :category %>
-  <%= f.submit "Add restaurant"%>
-<% end %>
+<h1>Add New Restaurant</h1>
+<body class="text-center">
+  <div class="container">
+    <%= simple_form_for @restaurant do |f| %>
+    <%= f.input :name %>
+    <%= f.input :address %>
+    <%= f.input :phone_number %>
+    <%= f.input :category %>
+    <%= f.submit "Add restaurant"%>
+    <% end %>
+  </div>
+</body>
+
+
+<style>
+
+h1, h3 {
+  color: black;
+  margin-bottom: 25px;
+}
+
+.container {
+  text-align: left;
+  width: 80%;
+}
+
+</style>

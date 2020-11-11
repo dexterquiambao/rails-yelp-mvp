@@ -1,6 +1,9 @@
-<h1><%= @restaurant.name %></h1>
+<head>
+  <h1><%= @restaurant.name %></h1>
+</head>
 
-<h4><%= @restaurant.category %> Restaurant</h2>
+<body>
+  <h4><%= @restaurant.category %> Restaurant</h2>
 <br>
 
 <h4>Address:</h4>
@@ -20,3 +23,18 @@
     <li><%= "⭐️"*review.rating %> - <%= review.content %></li>
   <% end %>
 </ul>
+
+</body>
+
+<style>
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+body {
+  margin-left: 20px;
+}
+
+</style>
